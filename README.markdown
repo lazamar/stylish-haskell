@@ -1,20 +1,16 @@
 stylish-haskell
 ===============
 
-[![Build Status](https://img.shields.io/circleci/project/github/jaspervdj/stylish-haskell.svg)](https://circleci.com/gh/jaspervdj/stylish-haskell)
-
-Introduction
-------------
-
-
-
-This is a modified version with additional steps.
+This is a modified version of stylish-haskell with additional linting steps.
 For the steps to work they have to be explicitly named in stylish-haskell.yaml
 
-
-
-
-
+Here are the additional configurations supported:
+``` yaml
+  # Separate top-level blocks using 2 spaces
+  - block_spacing: {}
+```
+Introduction
+------------
 
 A simple Haskell code prettifier. The goal is not to format all of the code in
 a file, since I find those kind of tools often "get in the way". However,
