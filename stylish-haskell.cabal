@@ -29,6 +29,7 @@ Library
 
   Exposed-modules:
     Language.Haskell.Stylish
+    Language.Haskell.Stylish.Step.BlockSpacing
     Language.Haskell.Stylish.Step.Imports
     Language.Haskell.Stylish.Step.LanguagePragmas
     Language.Haskell.Stylish.Step.SimpleAlign

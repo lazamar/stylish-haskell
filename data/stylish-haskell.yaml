@@ -197,6 +197,7 @@ steps:
 
   # Remove trailing whitespace
   - trailing_whitespace: {}
+  - mess_up: {}
 
 # A common setting is the number of columns (parts of) code will be wrapped
 # to. Different steps take this into account. Default: 80.

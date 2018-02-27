@@ -38,6 +38,7 @@ import qualified Language.Haskell.Stylish.Step.LanguagePragmas    as LanguagePra
 import qualified Language.Haskell.Stylish.Step.SimpleAlign        as SimpleAlign
 import qualified Language.Haskell.Stylish.Step.Tabs               as Tabs
 import qualified Language.Haskell.Stylish.Step.TrailingWhitespace as TrailingWhitespace
+import qualified Language.Haskell.Stylish.Step.BlockSpacing as BlockSpacing
 import qualified Language.Haskell.Stylish.Step.UnicodeSyntax      as UnicodeSyntax
 import           Language.Haskell.Stylish.Verbose
 
@@ -139,6 +140,7 @@ catalog = M.fromList
     , ("simple_align",        parseSimpleAlign)
     , ("tabs",                parseTabs)
     , ("trailing_whitespace", parseTrailingWhitespace)
+    , ("block_spacing", parseBlockSpacing)
     , ("unicode_syntax",      parseUnicodeSyntax)
     ]
 
@@ -243,6 +245,10 @@ parseTabs _ o = Tabs.step
 parseTrailingWhitespace :: Config -> A.Object -> A.Parser Step
 parseTrailingWhitespace _ _ = return TrailingWhitespace.step
 
+
+--------------------------------------------------------------------------------
+parseBlockSpacing :: Config -> A.Object -> A.Parser Step
+parseBlockSpacing _ _ = return BlockSpacing.step
 
 --------------------------------------------------------------------------------
 parseUnicodeSyntax :: Config -> A.Object -> A.Parser Step

@@ -6,6 +6,16 @@ stylish-haskell
 Introduction
 ------------
 
+
+
+This is a modified version with additional steps.
+For the steps to work they have to be explicitly named in stylish-haskell.yaml
+
+
+
+
+
+
 A simple Haskell code prettifier. The goal is not to format all of the code in
 a file, since I find those kind of tools often "get in the way". However,
 manually cleaning up import statements etc. gets tedious very quickly.
